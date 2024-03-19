@@ -69,6 +69,7 @@ GameObject:
   - component: {fileID: 6108903218005232079}
   - component: {fileID: 6117446229638758607}
   - component: {fileID: 5150347042891539272}
+  - component: {fileID: 483261575262288706}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -283,6 +284,18 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &483261575262288706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2185687102044961816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b9f0303810ee5429578b85938a9eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2924970633493403055
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +441,8 @@ MonoBehaviour:
   FPCamera: {fileID: 7169402046780697748}
   range: 100
   damage: 30
+  muzzleFlash: {fileID: 0}
+  hitEffect: {fileID: 0}
 --- !u!4 &2698497475577943511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
