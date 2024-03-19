@@ -24,7 +24,7 @@ public class EnemyAI : MonoBehaviour
         }
         else if(distanceToTarget <= chaseRange)
         {
-            isProvoked = true;            
+            isProvoked = true;
         }
     }
 
@@ -43,11 +43,14 @@ public class EnemyAI : MonoBehaviour
 
     void ChaseTarget()
     {
+        GetComponent<Animator>().SetBool("attack", false);
+        GetComponent<Animator>().SetTrigger("move");
         navMeshAgent.SetDestination(target.position);
     }
 
     void AttackTarget()
     {
+        GetComponent<Animator>().SetBool("attack", true);
         Debug.Log(name + " has seeked and is destroying " + target.name);
     }
 
