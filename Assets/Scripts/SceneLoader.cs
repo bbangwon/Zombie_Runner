@@ -7,6 +7,7 @@ public class SceneLoader : MonoBehaviour
     {
         Debug.Log("Reload Game");
         SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
     }
 
     public void QuitGame()
