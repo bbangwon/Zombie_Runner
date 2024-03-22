@@ -1347,6 +1347,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e51dd0ece34c70d40a3e9f0fa4be2274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!20 &1380929910 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7169402046780697748, guid: c4fdb9661a0592e40a29db3f5fd54847, type: 3}
+  m_PrefabInstance: {fileID: 5507541466040269598}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1499083309
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,6 +2247,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6548903597087133619, guid: c4fdb9661a0592e40a29db3f5fd54847, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7966973107640512326, guid: c4fdb9661a0592e40a29db3f5fd54847, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 1380929910}
+    - target: {fileID: 7966973107640512326, guid: c4fdb9661a0592e40a29db3f5fd54847, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 8997996946660734950}
     - target: {fileID: 8278674217022885791, guid: c4fdb9661a0592e40a29db3f5fd54847, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.8261743
@@ -2296,6 +2313,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8278674217022885791, guid: c4fdb9661a0592e40a29db3f5fd54847, type: 3}
   m_PrefabInstance: {fileID: 5507541466040269598}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8997996946660734950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8869658513525563023, guid: c4fdb9661a0592e40a29db3f5fd54847, type: 3}
+  m_PrefabInstance: {fileID: 5507541466040269598}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43d5e8aced7fb6e4391856154dc8c806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
