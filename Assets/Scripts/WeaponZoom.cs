@@ -32,5 +32,5 @@ public class WeaponZoom : MonoBehaviour
                 starterAssetsInputs.lookSenstivity = zoomOutSensitivity;
             }
         }
-    }
+    }    
 }

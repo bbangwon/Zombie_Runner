@@ -14,6 +14,8 @@ public class DeathHandler : MonoBehaviour
     {
         gameOverCanvas.enabled = true;
         Time.timeScale = 0;
+
+        FindObjectOfType<WeaponSwitcher>().enabled = false;
         var starterAssetsInput = GetComponent<StarterAssetsInputs>();
 
         starterAssetsInput.cursorLocked = false;
