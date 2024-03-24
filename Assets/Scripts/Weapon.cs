@@ -13,25 +13,29 @@ public class Weapon : MonoBehaviour
 
     bool canShoot = true;
 
-    void Update()
+    private void OnEnable()
     {
-        if (Input.GetMouseButtonDown(0) && canShoot)
-        {
-           StartCoroutine(Shoot());
-        }
-    }
-
-    IEnumerator Shoot()
-    {
-        if(ammoSlot.GetAmmoAmount() <= 0) yield break;
-
-        canShoot = false;
-        PlayMuzzleFlash();
-        ProcessRaycast();
-        ammoSlot.ReduceCurrentAmmo();
-        yield return new WaitForSeconds(timeBetweenShots);        
         canShoot = true;
     }
+    //void Update()
+    //{
+    //    if (Input.GetMouseButtonDown(0) && canShoot)
+    //    {
+    //       StartCoroutine(Shoot());
+    //    }
+    //}
+
+    //IEnumerator Shoot()
+    //{
+    //    if(ammoSlot.GetAmmoAmount() <= 0) yield break;
+
+    //    canShoot = false;
+    //    PlayMuzzleFlash();
+    //    ProcessRaycast();
+    //    ammoSlot.ReduceCurrentAmmo();
+    //    yield return new WaitForSeconds(timeBetweenShots);        
+    //    canShoot = true;
+    //}
 
     private void PlayMuzzleFlash()
     {
