@@ -49,7 +49,7 @@ Light:
   m_Intensity: 10
   m_Range: 20
   m_SpotAngle: 70
-  m_InnerSpotAngle: 70
+  m_InnerSpotAngle: 60
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -131,3 +131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70f3ffb3018f7544a02e850d79a3eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightDecay: 0.1
+  angleDecay: 1
+  minimumAngle: 40
